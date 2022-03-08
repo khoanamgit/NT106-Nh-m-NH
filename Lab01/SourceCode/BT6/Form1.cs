@@ -32,13 +32,15 @@ namespace BT6
 
             //Tách bỏ dấu ',' trong input
             arr = textBox1.Text.Split(',');
-
+            
+            //Sử dụng mảng arr2 để lưu những phần tử nhập vào chuyển từ kiểu string -> double
             arr2 = arr.Select(double.Parse).ToArray();
-
+            
+            //Xoá listBox
             listBox1.Text = string.Empty;
 
             
-
+            // Xuất mảng theo yêu cầu
             for(int i = 0; i < arr2.Length; i++)
             {
                 int j = i + 1;
@@ -52,8 +54,9 @@ namespace BT6
        
         private void button2_Click_1(object sender, EventArgs e)
         {
-            double sum = 0;
-            double result = 0;
+            // Tính trung bình cộng của mảng
+            double sum = 0; // Biến lưu tổng
+            double result = 0; //Lưu trung bình cộng
             for (int i = 0; i < arr2.Length; i++)
             {
                 sum = sum  + arr2[i];
@@ -81,6 +84,7 @@ namespace BT6
 
         private void button3_Click(object sender, EventArgs e)
         {
+            // Nút xoá
             textBox1.Text = String.Empty;
             textBox2.Text = String.Empty;
             listBox1.Items.Clear();
@@ -91,6 +95,7 @@ namespace BT6
 
         private void button4_Click(object sender, EventArgs e)
         {
+            //Tìm phần tử lớn nhất
             double max_item = arr2[0];
             for(int i = 0; i < arr2.Length; i++)
             {
@@ -104,6 +109,7 @@ namespace BT6
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //Tìm phần tử nhỏ nhất
             double min_item = arr2[0];
             for (int i = 0; i < arr2.Length; i++)
             {
@@ -117,6 +123,7 @@ namespace BT6
 
         private void button6_Click(object sender, EventArgs e)
         {
+            // Kiểm tra loại giỏi, khá, trung bình, yếu, kém
             double sum = 0;
             double result = 0;
             for (int i = 0; i < arr2.Length; i++)
