@@ -14,5 +14,5 @@
 | --- | --- | --- | --- | 
 | Võ Khoa Nam | 19521877 | 19521877@gm.uit.edu.vn | [khoanamgit](https://github.com/khoanamgit) |
 | Trịnh Minh Hoàng | 19521547 | 19521547@gm.uit.edu.vn |  |
-
+| Phạm Trung Hiếu | 19521512 | 19521512@gm.uit.edu.vn |[hieupt123](https://github.com/hieupt123) |
 
